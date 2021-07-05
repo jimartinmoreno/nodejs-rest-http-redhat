@@ -32,7 +32,7 @@ app.use('/licenses', express.static(path.join(__dirname, 'licenses')));
 
 app.use('/api/greeting', (request, response) => {
   const name = request.query ? request.query.name : undefined;
-  response.send({"data":[{"value": "Incident","b2x": "return \"Incident\";","verbalization": "Incident"},{"value": "FullAuthority","b2x": "return \"Full Authority\";","verbalization": "Full Authority"},{"value": "Other","b2x": "return \"Other\";","verbalization": "Other"}]});
+  response.send({"data":[{"value": "DirectCostsId","b2x": "return \"Direct costs\";","verbalization": "Direct costs"},{"value": "IndirectCostsId","b2x": "return \"Indirect costs\";","verbalization": "Indirect costs"},{"value": "Other","b2x": "return \"Other\";","verbalization": "Other"}]});
 });
 
 module.exports = app;
