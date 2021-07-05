@@ -42,7 +42,7 @@ app.use('/api/scopeOrCategory', (request, response) => {
 
 app.use('/api/roles', (request, response) => {
   const name = request.query ? request.query.name : undefined;
-  response.send({"data":[{"value": "DirectCostsId","b2x": "return \"Direct costs\";","verbalization": "Direct costs"},{"value": "IndirectCostsId","b2x": "return \"Indirect costs\";","verbalization": "Indirect costs"},{"value": "Other","b2x": "return \"Other\";","verbalization": "Other"}]});
+  response.send({"data":[{"value": "Area_Customer_Experience_Manager", "b2x": "Area Customer Experience Manager", "verbalization": "Area Customer Experience Manager"}, {"value": "Area_Managing_Director", "b2x": "Area Managing Director", "verbalization": "Area Managing Director"}, {"value": "CEO_Ocean_and_Logistics", "b2x": "CEO Ocean and Logistics", "verbalization": "CEO Ocean and Logistics"}, {"value": "Global_Head_of_Contract_Logistics", "b2x": "Global Head of Contract Logistics", "verbalization": "Global Head of Contract Logistics"}, {"value": "Global_Head_of_Logistics_and_Services_Product", "b2x": "Global Head of Logistics and Services Product", "verbalization": "Global Head of Logistics and Services Product"}, {"value": "Hamburg_Sud_Area_CS_Manager", "b2x": "Hamburg Sud Area CS Manager", "verbalization": "Hamburg Sud Area CS Manager"}, {"value": "Head_of_Contract_Products", "b2x": "Head of Contract Products", "verbalization": "Head of Contract Products"}, {"value": "Head_of_Ocean_Product", "b2x": "Head of Ocean Product", "verbalization": "Head of Ocean Product"}, {"value": "Regional_Managing_Director", "b2x": "Regional Managing Director", "verbalization": "Regional Managing Director"}]});
 });
 
 module.exports = app;
