@@ -37,6 +37,11 @@ app.use('/api/greeting', (request, response) => {
 
 app.use('/api/scopeOrCategory', (request, response) => {
   const name = request.query ? request.query.name : undefined;
+  response.send({"data":[{"value": "DirectCostsId","b2x": "Direct costs","verbalization": "Direct costs"},{"value": "IndirectCostsId","b2x": "Indirect costs","verbalization": "Indirect costs"},{"value": "Other","b2x": "Other","verbalization": "Other"}]});
+});
+
+app.use('/api/roles', (request, response) => {
+  const name = request.query ? request.query.name : undefined;
   response.send({"data":[{"value": "DirectCostsId","b2x": "return \"Direct costs\";","verbalization": "Direct costs"},{"value": "IndirectCostsId","b2x": "return \"Indirect costs\";","verbalization": "Indirect costs"},{"value": "Other","b2x": "return \"Other\";","verbalization": "Other"}]});
 });
 
